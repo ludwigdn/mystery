@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: #999999;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    margin: 0 0 30px 0;
+    padding:0;
+}
+
+a {
+    color: white;
+}
+
+strong {
+    color : white;
+    font-weight: 900;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#banner {
+    width: 100%;
+    cursor: pointer;
+}
+
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.separator {
+    height: 1px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article-title {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.article-content {
+    margin-top: 20px;
+    text-align: justify ;
+}
+
+.signature {
+    margin-top: 10px;
+    text-align: right;
+}
+
+audio {
+    height: 0px;
+    width: 0px;
+}

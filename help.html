@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Le journal du Détective Carter</title>
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <img onclick="goHome()" id="banner" src="content/banner.jpg" />
+        </div>
+
+        <div class="content">
+        
+            <div class="separator"></div>
+            
+            <div class="article">
+                <p class="article-content">                    
+                    Si vous êtes ici, c'est que vous avez décidé de m'aider sur l'affaire de a disparition de Noël, et je vous en remercie. Cela étant, je préfère vous prévenir que vous vous lancez dans une cause perdue d'avance. Jai passé des mois à m'arracher les cheveux, au point de croire que la famille qui a fait appel à mes services se foutait de moi. L'impression qu'on me jouait une bonne vieille farce pour le moins avariée. Enfin, c'est vous qui voyez, c'est votre temps que vous gaspillez. Pour le mien, c'est déjà fait.<br><br>
+
+                    Voici ce que j'ai appris sur cette affaire :
+
+                    <ul>
+                        <li>Le disparu était un physicien/chimiste et travaillait dans un complexe gouvernemental américain top-secret.</li>
+                        <li>Il rentrait tout les ans en France une semaine en avance pour les fêtes de fin d'année, mais cette année-là, aucun signe de lui. </li>
+                        <li>Les photographies sont importantes. <strong>Une photo en particulier</strong> aurait dû m'aider, mais ele resta introuvable.</li>
+                        <li>Aucune personne n'a été contacté par le disparu. S'il a disparu pour son travail, alors son employeur top-secret a dû s'assurer que rien ne fuite.</li>
+                    </ul>
+
+                    C'est tout ce que je peux vous dire pour le moment. J'ai avancé plus loin dans l'enquête mais pour la suite, vous devrez prouver que vous êtes réellement investi dans cette affaire :<br><br>
+
+                    <input id="indiceNombre" type="number" placeholder="Nombre"/>
+                    <input id="indiceMot" type="text" placeholder="Mot">
+                    <button onclick="confirmerIndices()">Confirmer</button>
+
+                </p>
+            </div>
+                
+            <div class="separator"></div>
+            
+        </div>
+        <audio src="content/main.mp3" autoplay controls></audio>
+    </body>
+
+    <script>
+        function confirmerIndices() {
+            let indice1 = document.getElementById("indiceNombre").value.toUpperCase();
+            let indice2 = document.getElementById("indiceMot").value.toUpperCase();
+            if (indice1 == "2102" && indice2 == "INTELLIGENCE") {
+                window.location.href = './help2.html'; 
+            }
+        }
+        function goHome() {
+            window.location.href = './index.html'; 
+        }
+    </script>
+</html>

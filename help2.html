@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Le journal du Détective Carter</title>
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <img onclick="goHome()" id="banner" src="content/banner.jpg" />
+        </div>
+
+        <div class="content">
+        
+            <div class="separator"></div>
+            
+            <div class="article">
+                <p class="article-content">                    
+                  Bien. Vous êtes vraiment motivés à résoudre cette affaire.<br><br>
+                  
+                  Comme vous l'aurez deviné, j'avais bien trouvé la fameuse photo du fils qui a disparu. Le compte twitter indiqué dessus est très suspect. Si c'est bien le fils qui l'a créé, il y dit qu'il est dans le futur. C'est à partir de là que j'ai commencé à décrocher. Je suis quelqu'un de très cartésien, alors une histoire de voyage dans le temps... autant lie un bon bouquin de science-fiction des années 50.<br><br>
+
+                  Mais si vous y croyez, alors pas de problème, continuez l'enquête. Pour cela, il vous faudra regarder très très loin vers les étoiles, là où il y a des galaxies lointaines. Il vous faudra aussi parcourir Lutèce et vous diriger vers Port-Royal...
+                </p>                
+                  
+                <input id="indiceEtoile" type="text" placeholder="Secret des étoiles">
+                <input id="indiceParis" type="text" placeholder="Secret de Paris">
+                <button onclick="confirmerIndices()">Confirmer</button>
+
+            </div>
+                
+            <div class="separator"></div>
+            
+        </div>
+        <audio src="content/main.mp3" autoplay controls></audio>
+    </body>
+
+    <script>
+        function confirmerIndices() {
+            let indiceEtoile = document.getElementById("indiceEtoile").value.toUpperCase();
+            let indiceParis = document.getElementById("indiceParis").value.toUpperCase();
+            if (indiceEtoile == "TATOOINE" && indiceParis == "PIRATE") {
+                window.location.href = './final.html'; 
+            }
+        }
+        function goHome() {
+            window.location.href = './index.html'; 
+        }
+    </script>
+</html>
